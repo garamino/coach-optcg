@@ -262,3 +262,32 @@ body:not(.learn) .learn-only { display: none; }
 .text-input { width: 100%; min-height: 52px; padding: 10px 14px; border-radius: 12px; border: 1.5px solid var(--line);
   background: var(--chip); color: var(--ink); font: inherit; user-select: text; }
 .text-input:focus { outline: 3px solid var(--accent-soft); border-color: var(--accent); }
+
+/* ---------- Conseil : blocs bien séparés ---------- */
+:root { --water: #e0f2fe; --water-line: #7dd3fc; --water-ink: #0c4a6e; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --water: #0c2a3d; --water-line: #1e6a91; --water-ink: #d6efff; } }
+:root[data-theme="dark"] { --water: #0c2a3d; --water-line: #1e6a91; --water-ink: #d6efff; }
+
+#advice { display: flex; flex-direction: column; gap: 16px; }
+#advice:empty { display: none; }
+
+/* Bulle de Bubulle : bleu « eau », avec une petite pointe vers le poisson */
+.bubble-row { align-items: center; gap: 14px; padding-bottom: 4px; }
+.bubble { background: var(--water); color: var(--water-ink); border: 2px solid var(--water-line);
+  border-radius: 20px; box-shadow: var(--shadow); }
+.bubble::before { content: ""; position: absolute; left: -11px; top: 50%; width: 18px; height: 18px; margin-top: -9px;
+  background: var(--water); border-left: 2px solid var(--water-line); border-bottom: 2px solid var(--water-line);
+  transform: rotate(45deg); border-radius: 0 0 0 4px; }
+
+/* Chaque coup = une carte à part, avec un liseré vert */
+.move { background: var(--panel); border: 2px solid var(--line); border-left: 6px solid var(--accent);
+  border-radius: 16px; padding: 14px 16px; box-shadow: var(--shadow); align-items: flex-start; }
+.move-num { margin-top: 2px; }
+.move-action { line-height: 1.25; }
+.move-why { margin-top: 6px; line-height: 1.45; }
+.move-cards { margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); }
+
+/* À retenir : encadré jaune distinct */
+.remember { border: 2px dashed var(--don); border-radius: 16px; padding: 14px 16px; line-height: 1.45; }
+
+.advice-note { margin: 0; text-align: center; padding-top: 4px; border-top: 1px solid var(--line); padding-top: 12px; }

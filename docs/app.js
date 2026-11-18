@@ -362,7 +362,7 @@ $("#btn-advice").addEventListener("click", async () => {
         </div>`;
       }).join("") +
       (res.a_retenir ? `<div class="remember">💡 <b>À retenir :</b> ${esc(res.a_retenir)}</div>` : "") +
-      `<p class="hint" style="margin:0;text-align:center">C'est toi la capitaine : tu peux suivre le conseil… ou tenter ton idée ! 🏴‍☠️</p>`;
+      `<p class="hint advice-note">C'est toi la capitaine : tu peux suivre le conseil… ou tenter ton idée ! 🏴‍☠️</p>`;
   } catch (err) {
     box.innerHTML = `<p class="error">${esc(err.message)}</p>`;
     if (/Réglages/.test(err.message)) openSettings();
