@@ -1,0 +1,17 @@
+- Chaque joueur a un leader (avec des points de vie = cartes de vie posées face cachée) et un deck de 50 cartes + un deck de 10 DON!!.
+- Déroulement du tour : 1) Redresser (tout redevient actif, les DON attachés reviennent dans la zone de coût), 2) Piocher 1 carte (sauf le tout premier joueur au tour 1), 3) Ajouter 2 DON!! (1 seul pour le premier joueur au tour 1), 4) Phase principale, 5) Fin du tour.
+- Phase principale, dans l'ordre que l'on veut :
+  - Jouer un personnage / un événement / un lieu en épuisant (tournant) autant de DON!! actifs que son coût.
+  - Attacher des DON!! actifs à son leader ou à un personnage : +1000 de puissance par DON pendant TON tour.
+  - Activer des effets « Activé : Principal ».
+  - Attaquer : épuiser son leader ou un personnage actif pour attaquer le leader adverse ou un personnage adverse ÉPUISÉ.
+- Un personnage joué ce tour-ci ne peut pas attaquer (sauf s'il a Initiative / Rush).
+- Maximum 5 personnages sur le terrain.
+- Combat : l'attaque réussit si la puissance de l'attaquant est SUPÉRIEURE OU ÉGALE à celle du défenseur.
+  - Le défenseur peut utiliser un personnage avec Bloqueur (en l'épuisant) pour prendre l'attaque à la place.
+  - Le défenseur peut ensuite jouer des cartes « counter » depuis sa main : la valeur counter (+1000 / +2000) s'ajoute à la puissance de la cible ; certains événements Counter coûtent des DON.
+  - Si un personnage perd le combat, il est mis KO. Si le leader est touché, son propriétaire prend une carte de vie en main (si elle a un effet Déclenchement / Trigger, il peut l'activer gratuitement).
+  - Double attaque : retire 2 vies. Initiative (Rush) : peut attaquer le tour où il est joué.
+- On gagne si le leader adverse est touché alors qu'il n'a plus de vie, ou si l'adversaire ne peut plus piocher.
+- Effets fréquents : « Jouée » (quand on joue la carte), « Activé : Principal » (une fois par tour pendant la phase principale), « Quand attaque », « DON!! x1 » (effet actif seulement si au moins 1 DON est attaché à la carte), « Votre tour » / « Tour adverse », « Une fois par tour ».
+- Les DON!! non utilisés ne servent à rien à la fin de son tour, MAIS pendant le tour adverse, garder des cartes counter en main permet de se défendre.

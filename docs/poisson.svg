@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Bubulle, le poisson coach -->
+  <defs>
+    <radialGradient id="corps" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#ffd2b8"/>
+      <stop offset=".55" stop-color="#ff9f7a"/>
+      <stop offset="1" stop-color="#f2735a"/>
+    </radialGradient>
+    <linearGradient id="nageoire" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff8a6b"/>
+      <stop offset="1" stop-color="#ffb08f"/>
+    </linearGradient>
+  </defs>
+  <!-- bulles -->
+  <circle cx="168" cy="40" r="9" fill="#bfe9ff" opacity=".85"/>
+  <circle cx="182" cy="18" r="5" fill="#bfe9ff" opacity=".7"/>
+  <circle cx="171" cy="37" r="3" fill="#fff" opacity=".9"/>
+  <!-- queue -->
+  <path d="M42 100 L8 66 Q2 100 8 134 Z" fill="url(#nageoire)" stroke="#e8634b" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M10 82 L30 98 M10 118 L30 102" stroke="#e8634b" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
+  <!-- nageoire du dessus -->
+  <path d="M78 48 Q100 14 132 40 Q108 44 96 58 Z" fill="url(#nageoire)" stroke="#e8634b" stroke-width="3" stroke-linejoin="round"/>
+  <!-- corps -->
+  <ellipse cx="104" cy="104" rx="66" ry="56" fill="url(#corps)" stroke="#e8634b" stroke-width="3.5"/>
+  <!-- écailles -->
+  <path d="M62 92 q8 8 0 16 M74 84 q9 10 0 22 M74 112 q8 8 0 16" fill="none" stroke="#f08a6e" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+  <!-- ventre -->
+  <ellipse cx="116" cy="130" rx="38" ry="18" fill="#fff1e6" opacity=".75"/>
+  <!-- petite nageoire -->
+  <path d="M100 124 Q92 146 112 144 Q114 132 108 124 Z" fill="#ffb08f" stroke="#e8634b" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- oeil -->
+  <circle cx="132" cy="92" r="20" fill="#fff" stroke="#3b2a2a" stroke-width="3"/>
+  <circle cx="136" cy="94" r="12" fill="#2b1d1d"/>
+  <circle cx="140" cy="89" r="5" fill="#fff"/>
+  <circle cx="131" cy="99" r="2.5" fill="#fff"/>
+  <!-- joue -->
+  <ellipse cx="144" cy="120" rx="11" ry="7" fill="#ff6f8f" opacity=".45"/>
+  <!-- bouche -->
+  <path d="M158 112 q6 7 12 0" fill="none" stroke="#3b2a2a" stroke-width="3" stroke-linecap="round"/>
+  <!-- bandana vert (clin d'oeil au deck) -->
+  <path d="M96 52 Q120 44 146 58 L142 68 Q120 56 98 63 Z" fill="#15803d" stroke="#0f5f2d" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M96 56 l-14 -8 l4 14 Z" fill="#15803d" stroke="#0f5f2d" stroke-width="2" stroke-linejoin="round"/>
+</svg>

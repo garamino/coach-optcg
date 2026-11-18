@@ -1,0 +1,480 @@
+{
+  "nom": "Zoro vert (OP12-020)",
+  "leader": {
+    "code": "OP12-020",
+    "nom": "Roronoa Zoro (leader)",
+    "categorie": "Leader",
+    "couleur": "Vert",
+    "cout": null,
+    "puissance": 5000,
+    "counter": 0,
+    "types": [
+      "Straw Hat Crew Supernovas"
+    ],
+    "effet_officiel": "[DON!!×3] [Activation : Principale] [Une fois par tour] Si ce Leader combat contre un Personnage adverse durant ce tour, redressez-le. Puis, ce Leader ne peut pas attaquer les Personnages adverses ayant un coût de base de 7 ou moins pour tout le tour.",
+    "effet_simple": "Avec 3 DON attachés, une fois par tour : si ton leader a déjà attaqué un perso adverse ce tour, tu peux le redresser pour attaquer encore (mais seulement le leader adverse ou un perso de coût 8+).",
+    "image": "images/OP12-020.png",
+    "vie": 5
+  },
+  "cartes": [
+    {
+      "code": "EB05-018",
+      "nom": "Rebecca",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 1,
+      "puissance": 1000,
+      "counter": 2000,
+      "types": [
+        "Dressrosa"
+      ],
+      "effet_officiel": "[On Play] Up to 1 of your opponent's rested Characters with a cost of 6 or less will not become active in your opponent's next Refresh Phase.",
+      "effet_simple": "Quand tu la joues : un perso adverse épuisé (coût 6 ou moins) ne se redressera pas au prochain tour adverse.",
+      "image": "images/EB05-018.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP12-028",
+      "nom": "Kouzuki Hiyori",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 1,
+      "puissance": 0,
+      "counter": 1000,
+      "types": [
+        "Land of Wano Kouzuki Clan"
+      ],
+      "effet_officiel": "[Activate: Main] You may rest 1 of your DON!! cards and this Character: If your Leader is [Roronoa Zoro], look at 5 cards from the top of your deck; reveal up to 1 (Slash) attribute card or green Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+      "effet_simple": "Principal : épuise 1 DON et Hiyori → regarde 5 cartes et prends une carte Slash ou un événement vert.",
+      "image": "images/OP12-028.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP12-027",
+      "nom": "Koushirou",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 2,
+      "puissance": 1000,
+      "counter": 1000,
+      "types": [
+        "East Blue Frost Moon Village"
+      ],
+      "effet_officiel": "If your (Slash) attribute Character with a cost of 5 or less other than this Character would be K.O.'d by your opponent's effect, you may rest this Character instead. [Blocker]",
+      "effet_simple": "Bloqueur. Si un autre de tes persos Slash (coût 5 ou moins) va être mis KO par un effet adverse, tu peux épuiser Koushirou à sa place.",
+      "image": "images/OP12-027.png",
+      "quantite": 4
+    },
+    {
+      "code": "OP12-029",
+      "nom": "Shimotsuki Kouzaburou",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 3,
+      "puissance": 2000,
+      "counter": 2000,
+      "types": [
+        "Land of Wano East Blue Frost Moon Village"
+      ],
+      "effet_officiel": "[On Play] Rest up to 1 of your opponent's Characters with a cost of 2 or less. Then, K.O. up to 1 of your opponent's rested Characters with a base cost of 1 or less.",
+      "effet_simple": "Quand tu le joues : épuise un perso adverse de coût 2 ou moins, puis mets KO un perso adverse épuisé de coût 1 ou moins.",
+      "image": "images/OP12-029.png",
+      "quantite": 4
+    },
+    {
+      "code": "EB02-019",
+      "nom": "Zoro (4, épuise)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 4,
+      "puissance": 5000,
+      "counter": 1000,
+      "types": [
+        "Straw Hat Crew East Blue"
+      ],
+      "effet_officiel": "If your opponent has 2 or more Characters, this Character can attack Characters on the turn in which it is played. [On Play] If your Leader has the \"Straw Hat Crew\" type, rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+      "effet_simple": "Quand tu le joues : épuise un perso adverse de coût 4 ou moins. Si l'adversaire a 2 persos ou plus, il peut attaquer un perso dès ce tour.",
+      "image": "images/EB02-019.png",
+      "quantite": 4
+    },
+    {
+      "code": "OP06-023",
+      "nom": "Arlong",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 4,
+      "puissance": 6000,
+      "counter": 0,
+      "types": [
+        "Fish-Man Arlong Pirates East Blue"
+      ],
+      "effet_officiel": "[On Play] You may trash 1 card from your hand: Up to 1 of your opponent's rested Leader cannot attack until the end of your opponent's next turn. [Trigger] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+      "effet_simple": "Quand tu le joues : défausse 1 carte (si tu veux) → le leader adverse épuisé ne pourra pas attaquer à son prochain tour. Déclenchement : épuise un perso adverse de coût 4 ou moins.",
+      "image": "images/OP06-023.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP06-036",
+      "nom": "Ryuma",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 4,
+      "puissance": 6000,
+      "counter": 0,
+      "types": [
+        "Land of Wano Thriller Bark Pirates"
+      ],
+      "effet_officiel": "[On Play] / [On K.O.] K.O. up to 1 of your opponent's rested Characters with a cost of 4 or less.",
+      "effet_simple": "Quand tu le joues ET quand il est mis KO : mets KO un perso adverse épuisé de coût 4 ou moins.",
+      "image": "images/OP06-036.png",
+      "quantite": 3
+    },
+    {
+      "code": "OP12-036",
+      "nom": "Zoro (4, +1000)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 4,
+      "puissance": 5000,
+      "counter": 1000,
+      "types": [
+        "Straw Hat Crew Supernovas"
+      ],
+      "effet_officiel": "This card in your hand cannot be played by effects. If your Leader has the (Slash) attribute, this Character cannot be K.O.'d in battle by (Slash) attribute cards and gains +1000 power.",
+      "effet_simple": "Il a +1000 (donc 6000) et ne peut pas être mis KO en combat par une carte Slash.",
+      "image": "images/OP12-036.png",
+      "quantite": 2
+    },
+    {
+      "code": "OP16-033",
+      "nom": "Morley",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 4,
+      "puissance": 5000,
+      "counter": 1000,
+      "types": [
+        "Giant Revolutionary Army"
+      ],
+      "effet_officiel": "If this Character would be K.O'd, you may rest 2 of your cards instead.  [Unblockable] (This card cannot be blocked.)",
+      "effet_simple": "Imblocable. S'il devait être mis KO, tu peux épuiser 2 de tes cartes à la place.",
+      "image": "images/OP16-033.png",
+      "quantite": 1
+    },
+    {
+      "code": "ST12-008",
+      "nom": "Zoro (4, DON x1)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 4,
+      "puissance": 6000,
+      "counter": 0,
+      "types": [
+        "Straw Hat Crew"
+      ],
+      "effet_officiel": "[DON!! x1][When Attacking] Rest up to 1 of your opponent's Characters with a cost of 6 or less.",
+      "effet_simple": "Avec 1 DON attaché, quand il attaque : épuise un perso adverse de coût 6 ou moins.",
+      "image": "images/ST12-008.png",
+      "quantite": 1
+    },
+    {
+      "code": "EB01-012",
+      "nom": "Cavendish",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 5,
+      "puissance": 6000,
+      "counter": 1000,
+      "types": [
+        "Beautiful Pirates Supernovas"
+      ],
+      "effet_officiel": "[On Play]/[When Attacking] If your Leader has the [Supernovas] type and you have no other [Cavendish] Characters, set up to 2 of your DON!! cards as active.",
+      "effet_simple": "Quand tu le joues et quand il attaque : redresse 2 de tes DON (s'il est ton seul Cavendish en jeu).",
+      "image": "images/EB01-012.png",
+      "quantite": 2
+    },
+    {
+      "code": "OP08-028",
+      "nom": "Nekomamushi (5)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 5,
+      "puissance": 6000,
+      "counter": 1000,
+      "types": [
+        "Minks The Akazaya Nine"
+      ],
+      "effet_officiel": "[On Play] If your opponent has 7 or more rested cards, this Character gains [Rush] during this turn. (This card can attack on the turn in which it is played.)",
+      "effet_simple": "Quand tu le joues : si l'adversaire a 7 cartes épuisées ou plus (persos + DON), il peut attaquer tout de suite.",
+      "image": "images/OP08-028.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP10-030",
+      "nom": "Smoker (5)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 5,
+      "puissance": 7000,
+      "counter": 0,
+      "types": [
+        "Navy Punk Hazard"
+      ],
+      "effet_officiel": "[Banish] (When this card deals damage, the target card is trashed without activating its Trigger.) [Activate: Main] Set up to 1 of your DON!! cards as active. Then, you cannot set DON!! cards as active using Character effects during this turn.",
+      "effet_simple": "Principal : redresse 1 de tes DON. Bannissement : la vie qu'il retire ne déclenche pas d'effet.",
+      "image": "images/OP10-030.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP12-023",
+      "nom": "Kawamatsu",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 5,
+      "puissance": 6000,
+      "counter": 2000,
+      "types": [
+        "Fish-Man Land of Wano The Akazaya Nine"
+      ],
+      "effet_officiel": "",
+      "effet_simple": "Pas d'effet : 6000 de puissance et un gros counter +2000.",
+      "image": "images/OP12-023.png",
+      "quantite": 4
+    },
+    {
+      "code": "OP12-031",
+      "nom": "Tashigi",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 5,
+      "puissance": 7000,
+      "counter": 0,
+      "types": [
+        "Navy East Blue"
+      ],
+      "effet_officiel": "[On Play] Rest up to 1 of your opponent's Characters with a base cost of 6 or less. Then, give up to 3 rested DON!! cards to your [Roronoa Zoro] Leader.",
+      "effet_simple": "Quand tu la joues : épuise un perso adverse (coût 6 ou moins), puis donne jusqu'à 3 DON épuisés à ton leader Zoro.",
+      "image": "images/OP12-031.png",
+      "quantite": 4
+    },
+    {
+      "code": "OP12-032",
+      "nom": "Nekomamushi (6)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 6,
+      "puissance": 7000,
+      "counter": 2000,
+      "types": [
+        "Land of Wano Minks The Akazaya Nine"
+      ],
+      "effet_officiel": "",
+      "effet_simple": "Pas d'effet : 7000 de puissance et un gros counter +2000.",
+      "image": "images/OP12-032.png",
+      "quantite": 4
+    },
+    {
+      "code": "OP16-028",
+      "nom": "Smoker (6)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 6,
+      "puissance": 7000,
+      "counter": 2000,
+      "types": [
+        "Navy"
+      ],
+      "effet_officiel": "",
+      "effet_simple": "Pas d'effet : 7000 de puissance et un gros counter +2000.",
+      "image": "images/OP16-028.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP16-035",
+      "nom": "Zoro (7, donne 3 DON)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 7,
+      "puissance": 9000,
+      "counter": 0,
+      "types": [
+        "Straw Hat Crew"
+      ],
+      "effet_officiel": "[On Play] Rest up to 1 of your opponent's cards. Then, you may trash 1 card from your hand. If you do, give up to 3 rested DON!! cards to your Leader.",
+      "effet_simple": "Quand tu le joues : épuise une carte adverse, puis tu peux défausser 1 carte pour donner 3 DON épuisés à ton leader.",
+      "image": "images/OP16-035.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP17-035",
+      "nom": "Zoro (7, 8000)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 7,
+      "puissance": 8000,
+      "counter": 2000,
+      "types": [
+        "East Blue Straw Hat Crew"
+      ],
+      "effet_officiel": "",
+      "effet_simple": "Pas d'effet : 8000 de puissance et un gros counter +2000.",
+      "image": "images/OP17-035.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP17-024",
+      "nom": "Howling Gab",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 8,
+      "puissance": 8000,
+      "counter": 1000,
+      "types": [
+        "Red-Haired Pirates"
+      ],
+      "effet_officiel": "[Banish] (When this card deals damage, the target card is trashed without activating its Trigger.) [On Play] Rest up to 1 of your opponent's Characters.",
+      "effet_simple": "Quand tu le joues : épuise un perso adverse. Bannissement : la vie qu'il retire ne déclenche pas d'effet.",
+      "image": "images/OP17-024.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP06-118",
+      "nom": "Zoro (9)",
+      "categorie": "Personnage",
+      "couleur": "Vert",
+      "cout": 9,
+      "puissance": 9000,
+      "counter": 0,
+      "types": [
+        "Straw Hat Crew"
+      ],
+      "effet_officiel": "[When Attacking][Once Per Turn](1)(You may rest the specified number of DON!! cards in your cost area.): Set this Character as active. [Activate:Main][Once Per Turn](2)(You may rest the specified number of DON!! cards in your cost area.): Set this Character as active.",
+      "effet_simple": "Une fois par tour quand il attaque : épuise 1 DON pour le redresser. Une fois par tour (Principal) : épuise 2 DON pour le redresser.",
+      "image": "images/OP06-118.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP06-038",
+      "nom": "The Billion-fold World Trichiliocosm",
+      "categorie": "Événement",
+      "couleur": "Vert",
+      "cout": 1,
+      "puissance": null,
+      "counter": 0,
+      "types": [
+        "Straw Hat Crew Dressrosa"
+      ],
+      "effet_officiel": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 8 or more rested cards, that card gains an additional +2000 power during this battle. [Trigger] K.O. up to 1 of your opponent's rested Characters with a cost of 3 or less.",
+      "effet_simple": "Counter : +2000 à ton leader ou un perso pour ce combat (+4000 si tu as 8 cartes épuisées ou plus). Déclenchement : mets KO un perso adverse épuisé de coût 3 ou moins.",
+      "image": "images/OP06-038.png",
+      "quantite": 2
+    },
+    {
+      "code": "OP17-037",
+      "nom": "Are You That Afraid of the New Era?!",
+      "categorie": "Événement",
+      "couleur": "Vert",
+      "cout": 1,
+      "puissance": null,
+      "counter": 0,
+      "types": [
+        "The Four Emperors Red-Haired Pirates"
+      ],
+      "effet_officiel": "[Main] Look at 5 cards from the top of your deck; reveal up to 1 card with a type including \"Red-Haired Pirates\" and add it to your hand. Then, place the rest at the bottom of your deck in any order. [Counter] You may rest 1 of your cards: Up to 1 of your Leader or Characters gains +3000 power during this battle.",
+      "effet_simple": "Principal : regarde 5 cartes et prends un « Red-Haired Pirates » (Howling Gab). Counter : épuise 1 de tes cartes → +3000 à ton leader ou un perso pour ce combat.",
+      "image": "images/OP17-037.png",
+      "quantite": 1
+    },
+    {
+      "code": "OP12-039",
+      "nom": "Luffy Is the Man Who Will Become the King of Pirates!!!",
+      "categorie": "Événement",
+      "couleur": "Vert",
+      "cout": 3,
+      "puissance": null,
+      "counter": 0,
+      "types": [
+        "Straw Hat Crew"
+      ],
+      "effet_officiel": "[Main] Set your [Roronoa Zoro] Leader as active. [Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+      "effet_simple": "Principal : redresse ton leader Zoro, il peut attaquer encore. Déclenchement : +1000 à ton leader ou un perso pour ce tour.",
+      "image": "images/OP12-039.png",
+      "quantite": 4
+    }
+  ],
+  "combos": [
+    {
+      "titre": "Tashigi + leader Zoro : attaquer 2 fois",
+      "cartes": [
+        "OP12-031",
+        "OP12-020"
+      ],
+      "explication": "Tashigi épuise un perso adverse ET donne 3 DON à ton leader gratuitement (des DON déjà épuisés). Avec 3 DON, ton leader a 8000 et son effet s'allume : il attaque le perso épuisé, puis tu le redresses et il attaque le leader adverse.",
+      "quand": "Dès que tu as 5 DON disponibles. Ordre : 1) joue Tashigi, 2) le leader attaque le perso que Tashigi a épuisé, 3) active l'effet du leader, 4) le leader attaque le leader adverse."
+    },
+    {
+      "titre": "Zoro (7, donne 3 DON) : la même chose en plus gros",
+      "cartes": [
+        "OP16-035",
+        "OP12-020"
+      ],
+      "explication": "Comme Tashigi : il épuise une carte adverse, et en défaussant 1 carte il donne 3 DON à ton leader. Ton leader peut alors attaquer un perso, se redresser, puis attaquer le leader adverse.",
+      "quand": "Quand tu as 7 DON et une carte peu utile à défausser."
+    },
+    {
+      "titre": "Événement « Luffy… King of Pirates » : une attaque de plus",
+      "cartes": [
+        "OP12-039",
+        "OP12-020"
+      ],
+      "explication": "Il redresse ton leader Zoro. Après le combo Tashigi (2 attaques du leader), il permet une 3e attaque.",
+      "quand": "Après que ton leader a attaqué, s'il te reste 3 DON."
+    },
+    {
+      "titre": "Épuiser puis mettre KO",
+      "cartes": [
+        "EB02-019",
+        "ST12-008",
+        "OP12-029",
+        "OP06-036",
+        "OP06-038"
+      ],
+      "explication": "Beaucoup de tes cartes épuisent les persos adverses. Un perso épuisé peut être attaqué, et Ryuma (ou le Déclenchement de Trichiliocosm) peut le mettre KO directement.",
+      "quand": "Joue d'abord la carte qui épuise, puis Ryuma ou ton attaque."
+    },
+    {
+      "titre": "Rebecca : garder un perso adverse épuisé",
+      "cartes": [
+        "EB05-018",
+        "OP12-031"
+      ],
+      "explication": "Après avoir épuisé un perso adverse, Rebecca l'empêche de se redresser : il ne pourra ni attaquer ni bloquer au tour suivant, et tu pourras encore l'attaquer.",
+      "quand": "Pour 1 DON, juste après Tashigi ou un Zoro qui épuise."
+    },
+    {
+      "titre": "Gagner des DON : Cavendish et Smoker (5)",
+      "cartes": [
+        "EB01-012",
+        "OP10-030"
+      ],
+      "explication": "Cavendish redresse 2 DON quand tu le joues (il ne coûte donc que 3) et encore 2 quand il attaque. Smoker redresse 1 DON. Ces DON servent à jouer une autre carte ou à renforcer une attaque.",
+      "quand": "Joue-les en premier dans ton tour, puis utilise les DON récupérés."
+    },
+    {
+      "titre": "Hiyori : chercher tes bonnes cartes",
+      "cartes": [
+        "OP12-028",
+        "OP12-039"
+      ],
+      "explication": "Pour 1 DON, Hiyori regarde 5 cartes et prend une carte Slash ou un événement vert. Ça t'aide à trouver tes Zoro et tes événements.",
+      "quand": "Au début du tour, s'il te reste 1 DON qui ne sert à rien."
+    }
+  ],
+  "conseils_generaux": [
+    "Ton leader a besoin de 3 DON attachés pour activer son effet : Tashigi et Zoro (7) les lui donnent gratuitement.",
+    "Un perso adverse épuisé peut être attaqué : épuise d'abord, attaque ensuite.",
+    "Avant d'attaquer, compte : il faut une puissance au moins égale à celle de la cible.",
+    "Kawamatsu, Nekomamushi (6), Smoker (6), Zoro (7, 8000) et Kouzaburou ont un counter +2000 : garde-les en main quand tu as peu de vies.",
+    "Koushirou est Bloqueur : il peut protéger ton leader pendant le tour adverse."
+  ]
+}
