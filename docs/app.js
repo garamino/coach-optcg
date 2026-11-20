@@ -565,6 +565,24 @@ $("#btn-combos").addEventListener("click", () => {
   });
 });
 
+/* ------------------------------------------------- Écran toujours allumé */
+// Empêche la tablette de se mettre en veille tant que l'app est affichée.
+// Le navigateur relâche le verrou quand on change d'onglet : on le reprend au retour.
+function keepScreenAwake() {
+  if (!("wakeLock" in navigator)) return;
+  let lock = null;
+  const request = async () => {
+    if (lock || document.visibilityState !== "visible") return;
+    try {
+      lock = await navigator.wakeLock.request("screen");
+      lock.addEventListener("release", () => { lock = null; });
+    } catch (_) { /* refusé (batterie faible…) : on retentera au prochain toucher */ }
+  };
+  document.addEventListener("visibilitychange", request);
+  document.addEventListener("pointerdown", request);
+  request();
+}
+
 /* ------------------------------------------------------------------ Démarrage */
 (async function init() {
   try {
@@ -581,6 +599,7 @@ $("#btn-combos").addEventListener("click", () => {
   state.hand = state.hand.filter((c) => byCode[c]);
   state.myBoard = state.myBoard.filter((p) => byCode[p.code]);
   render();
+  keepScreenAwake();
   if ("serviceWorker" in navigator && window.isSecureContext) {
     navigator.serviceWorker.register("sw.js").catch(() => {});
   }
