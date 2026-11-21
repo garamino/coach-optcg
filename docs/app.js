@@ -350,12 +350,17 @@ $("#btn-advice").addEventListener("click", async () => {
         </div>` : "") +
       res.coups.map((m, i) => {
         const cards = (m.cartes || []).map(cardOf).filter(Boolean);
+        // Rappel garanti des effets « Quand tu la joues » : l'IA oublie parfois de les détailler.
+        const effects = /jou/i.test(m.action)
+          ? cards.filter((c) => state.hand.includes(c.code) && /^Quand tu l/i.test(c.effet_simple || ""))
+          : [];
         return `
         <div class="move">
           <span class="move-num">${i + 1}</span>
           <div class="move-body">
             <div class="move-action">${esc(m.action)}</div>
             <div class="move-why">${esc(m.pourquoi)}</div>
+            ${effects.map((c) => `<div class="move-effect">✨ <b>N'oublie pas l'effet de ${esc(c.nom)} :</b> ${esc(c.effet_simple.replace(/^Quand tu l[ae] joues\s*:\s*/i, ""))}</div>`).join("")}
             ${cards.length ? `<div class="move-cards">${cards.map((c) =>
               `<button class="move-card" data-move-card="${esc(c.code)}">${thumb(c)}</button>`).join("")}</div>` : ""}
           </div>

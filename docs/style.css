@@ -291,3 +291,10 @@ body:not(.learn) .learn-only { display: none; }
 .remember { border: 2px dashed var(--don); border-radius: 16px; padding: 14px 16px; line-height: 1.45; }
 
 .advice-note { margin: 0; text-align: center; padding-top: 4px; border-top: 1px solid var(--line); padding-top: 12px; }
+
+/* Rappel d'effet « Quand tu la joues » sous un coup conseillé */
+.move-effect {
+  margin-top: 10px; padding: 10px 12px; border-radius: 12px;
+  background: var(--accent-soft); color: var(--ink); line-height: 1.45;
+  border-left: 4px solid var(--accent);
+}

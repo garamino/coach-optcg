@@ -158,6 +158,8 @@ const Gemini = (() => {
       "# Situation actuelle (c'est mon tour, phase principale)",
       s.tour ? `Tour n°${s.tour}${s.premier === true ? " (c'est moi qui ai commencé la partie)" : s.premier === false ? " (l'adversaire a commencé la partie)" : ""}` : null,
       `Ma main (${s.main.length} cartes) : ` + (s.main.map(name).join(", ") || "vide"),
+      ...[...new Set(s.main)].filter((c) => byCode[c]?.effet_simple)
+        .map((c) => `  - Effet de ${name(c)} (coût ${byCode[c].cout ?? "?"}) : ${byCode[c].effet_simple}`),
       `Mes DON!! disponibles (actifs) : ${s.don_dispo} sur ${s.don_total} DON en jeu`,
       s.don_leader ? `DON déjà attachés à mon leader : ${s.don_leader}` : null,
       `Mon leader : ${s.leader_epuise ? "épuisé (a déjà attaqué)" : "actif"}`,
@@ -204,7 +206,14 @@ const Gemini = (() => {
     const mode = state.apprentissage
       ? "Mode apprentissage ACTIVÉ : explique un peu plus (2 phrases max par pourquoi), rappelle la règle utilisée."
       : "Mode apprentissage désactivé : sois très bref (une phrase courte par pourquoi).";
-    return call({ system, parts: [{ text: describeState(state, deck) + "\n\n" + mode }], schema: ADVICE_SCHEMA, thinking: "MEDIUM" });
+    const check =
+      "Avant de répondre, vérifie : " +
+      "1) Pour chaque carte que tu fais jouer, l'action décrit-elle son effet « Quand tu la joues » avec les choix précis " +
+      "(quel perso adverse épuiser, donner 3 DON épuisés au leader…) ? " +
+      "2) Si le leader reçoit 3 DON (Tashigi, Zoro 7), as-tu proposé le combo du leader (attaquer le perso épuisé, activer son effet, attaquer le leader adverse) ? " +
+      "3) La puissance annoncée tient-elle compte de tous les DON attachés (+1000 par DON) ? " +
+      "4) Le total de DON dépensés ne dépasse-t-il pas les DON disponibles ?";
+    return call({ system, parts: [{ text: describeState(state, deck) + "\n\n" + mode + "\n\n" + check }], schema: ADVICE_SCHEMA, thinking: "MEDIUM" });
   }
 
   return { settings, saveSettings, recognize, advice, DEFAULT_MODEL };
