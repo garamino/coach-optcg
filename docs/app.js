@@ -325,11 +325,15 @@ function downscale(file, maxSide) {
 $("#btn-advice").addEventListener("click", async () => {
   const box = $("#advice");
   const btn = $("#btn-advice");
+  // Amène directement Bubulle à l'écran (sinon il faut défiler jusqu'en bas).
+  const showAdvice = () => $(".advice-panel").scrollIntoView({ behavior: "smooth", block: "start" });
   if (!state.hand.length && !state.myBoard.length) {
     box.innerHTML = `<div class="bubble-row"><img class="fish-avatar talk" src="poisson.svg" alt="Bubulle"><div class="bubble">Blub ! Montre-moi d'abord ta main (photo ou choix à la main) et tes DON, et je t'aide ! 💚</div></div>`;
+    showAdvice();
     return;
   }
   btn.disabled = true;
+  setTimeout(showAdvice, 0);
   box.innerHTML = `<div class="loading"><img class="fish-avatar swim" src="poisson.svg" alt=""> Bubulle réfléchit très fort… blub blub 🐟</div>`;
   try {
     const res = await Gemini.advice({
@@ -368,8 +372,10 @@ $("#btn-advice").addEventListener("click", async () => {
       }).join("") +
       (res.a_retenir ? `<div class="remember">💡 <b>À retenir :</b> ${esc(res.a_retenir)}</div>` : "") +
       `<p class="hint advice-note">C'est toi la capitaine : tu peux suivre le conseil… ou tenter ton idée ! 🏴‍☠️</p>`;
+    showAdvice();
   } catch (err) {
     box.innerHTML = `<p class="error">${esc(err.message)}</p>`;
+    showAdvice();
     if (/Réglages/.test(err.message)) openSettings();
   } finally {
     btn.disabled = false;

@@ -143,7 +143,7 @@ body:not(.learn) .learn-only { display: none; }
 .chip .don-tag { background: var(--don); color: #fff; border-radius: 8px; padding: 0 6px; font-size: 13px; font-weight: 700; }
 
 /* Conseil */
-.advice-panel { display: flex; flex-direction: column; gap: 12px; }
+.advice-panel { display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 150px; }
 .move { display: flex; gap: 12px; padding: 12px; border-radius: 14px; background: var(--accent-soft); }
 .move-num { flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--accent); color: var(--accent-ink);
   display: grid; place-items: center; font-weight: 800; }
